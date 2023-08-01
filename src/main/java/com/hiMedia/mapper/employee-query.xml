@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+    <entry key="selectEmpByLN">
+        SELECT PHONE
+              ,EMP_ID
+        WHERE EMP_NAME = ?
+    </entry>
+
+    <entry key="insertEmp">
+        INSERT INTO EMPLOYEE (
+                    EMP_NAME,
+                    EMP_ID,
+                    EMP_NO,
+                    JOB_CODE,
+                    SAL_LEVEL
+                    )
+        VALUES (?,?,?,?,?)
+    </entry>
+
+    <entry key="updateEmp">
+        UPDATE EMPLOYEE
+        SET SALARY = ?
+            WHERE EMP_ID = ?
+    </entry>
+
+    <entry key="deleteEmp">
+        DELETE FROM EMPLOYEE
+        WHERE EMP_ID = ?
+    </entry>
+</properties>
