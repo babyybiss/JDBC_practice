@@ -2,9 +2,12 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 
 <properties>
-    <entry key="selectEmpByLN">
-        SELECT PHONE
-              ,EMP_ID
+    <entry key="selectEmp">
+        SELECT EMP_ID
+              ,PHONE
+              ,EMAIL
+              ,JOB_CODE
+        FROM EMPLOYEE
         WHERE EMP_NAME = ?
     </entry>
 

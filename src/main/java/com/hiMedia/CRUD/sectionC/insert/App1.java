@@ -60,6 +60,7 @@ public class App1 {
 
 
           result = pstmt.executeUpdate();
+
        System.out.println(result + "명의 사원 추가 완료");
 
         } catch (IOException e) {
