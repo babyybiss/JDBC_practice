@@ -60,20 +60,14 @@ public class App1 {
                 System.out.println(empName + "사원의 직급코드: " + jobcode + ", 사원번호: " + id + ", 이메일: " + email + ", 전회번호: " + phone);
             }
 
+        } catch (IOException e) {
+            e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (rs != null) {
-                    rs.close();
-                }
-                if (pstmt != null) {
-                    pstmt.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            
+            close(conn);
+            close(pstmt);
         }
+
     }
 }
