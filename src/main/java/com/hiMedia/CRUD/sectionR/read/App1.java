@@ -49,14 +49,14 @@ public class App1 {
                 empList.add(empD);
             }
 
-            // Do something with the empList (e.g., print or process the retrieved data)
+            
             for (EmpDTO emp : empList) {
                 String id = emp.getEMP_ID();
                 String jobcode = emp.getJOB_CODE();
                 String email = emp.getEMAIL();
                 String phone = emp.getPHONE();
 
-                // Print the output with the field values
+               
                 System.out.println(empName + "사원의 직급코드: " + jobcode + ", 사원번호: " + id + ", 이메일: " + email + ", 전회번호: " + phone);
             }
 
@@ -73,7 +73,7 @@ public class App1 {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-            // Close the connection here or use try-with-resources for Connection as well
+            
         }
     }
 }
